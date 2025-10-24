@@ -8,25 +8,27 @@ import pandas as pd
 BEARER = os.getenv("TWITTER_BEARER")
 client = Client(bearer_token=BEARER, wait_on_rate_limit=True)
 
-query = '("ChatGPT" OR "generative AI" OR "large language model" OR "LLM") -is:retweet lang:en'
+query = '("ChatGPT" OR "AI" OR "Artificial Intelligence" OR "OpenAI" OR "large language model" OR "LLM" OR "Automation") -is:retweet lang:en'
 
-resp = client.search_recent_tweets(
+tweets = client.search_recent_tweets(
     query=query,
-    tweet_fields=["author_id","created_at","public_metrics","lang"],
+    tweet_fields=["created_at","public_metrics","lang"],
+    expansions=["author_id"],
+    user_fields=["username","public_metrics"],
     max_results=100
 )
 
-rows = []
-if resp.data:
-    for t in resp.data:
-        rows.append({
-            "id": t.id,
-            "text": t.text,
-            "author_id": t.author_id,
-            "created_at": t.created_at,
-            "retweets": t.public_metrics.get("reteet_count"),
-            "likes": t.public_metrics.get("like_count"),
+data = []
+if tweets.data:
+    for tweet in tweets.data:
+        data.append({
+            "id": tweet.id,
+            "text": tweet.text,
+            "author_id": tweet.author_id,
+            "created_at": tweet.created_at,
+            "retweets": tweet.public_metrics.get("reteet_count"),
+            "likes": tweet.public_metrics.get("like_count"),
         })
 
-df = pd.DataFrame(rows)
+df = pd.DataFrame(data)
 df.to_csv("twitter_ai_recent.csv", index=False)
