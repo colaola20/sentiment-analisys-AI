@@ -25,9 +25,43 @@ DEFAULT_SUBREDDITS: List[str] = [
 class RuntimeDefaults:
     mode: str = "top"  # {"new","top"}
     time_filter: str = "week"  # {"day","week","month"} when mode == "top"
-    posts_per_sub: int = 150
+    posts_per_sub: int = 1000
     top_level_comment_limit: int = 100
     use_hf: bool = False
     outdir: str = "reddit_non_tech_subs/data"
+
+
+
+# DEFAULT_SUBREDDITS: List[str] = ["MachineLearning", "ChatGPT", "OpenAI", "Programming", "Computing"]
+
+
+# @dataclass(frozen=True)
+# class RuntimeDefaults:
+#     mode: str = "top"  # {"new","top"}
+#     time_filter: str = "week"  # {"day","week","month"} when mode == "top"
+#     posts_per_sub: int = 1000
+#     top_level_comment_limit: int = 100
+#     use_hf: bool = False
+#     outdir: str = "reddit_tech_subs/data"
+
+
+
+# DEFAULT_SUBREDDITS: List[str] = [
+#     "writing", "photography", "music", "artbusiness",
+#     "jobs", "gradadmissions", "EntrepreneurRideAlong",
+# ]
+
+
+# @dataclass(frozen=True)
+# class RuntimeDefaults:
+#     mode: str = "top"  # {"new","top"}
+#     time_filter: str = "week"  # {"day","week","month"} when mode == "top"
+#     posts_per_sub: int = 150
+#     top_level_comment_limit: int = 100
+#     use_hf: bool = False
+#     outdir: str = "reddit_non_tech_subs/data"
+
+
+
 
 

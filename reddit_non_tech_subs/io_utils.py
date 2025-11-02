@@ -35,7 +35,7 @@ def write_outputs(df: pd.DataFrame, outdir: str, base_name: str) -> Dict[str, st
     ts = timestamp_now()
     csv_path = str(Path(outdir) / f"{base_name}_{ts}.csv")
     parquet_path = str(Path(outdir) / f"{base_name}_{ts}.parquet")
-    df.to_csv(csv_path, index=False, quoting=csv.QUOTE_MINIMAL)
+    df.to_csv(csv_path, index=True, quoting=csv.QUOTE_MINIMAL)
     # Prefer pyarrow if available
     try:
         df.to_parquet(parquet_path, index=False)
