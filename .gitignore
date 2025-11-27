@@ -2,3 +2,4 @@
 .env
 env
 /reddit_non_tech_subs/__pycache__
+.DS_Store
