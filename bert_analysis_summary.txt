@@ -1,0 +1,31 @@
+BERT SENTIMENT ANALYSIS SUMMARY
+================================================================================
+
+Model: cardiffnlp/twitter-roberta-base-sentiment-latest
+
+Sentiment Distribution:
+bert_label        negative    neutral   positive
+category                                        
+Reddit Non-Tech  39.085072  44.141252  16.773676
+Reddit Tech      41.131907  43.894831  14.973262
+YouTube Tech     27.325581  42.587209  30.087209
+
+Confidence by Category:
+                     mean       std
+category                           
+Reddit Non-Tech  0.697326  0.135318
+Reddit Tech      0.717612  0.139938
+YouTube Tech     0.739814  0.159129
+
+Engagement by Sentiment:
+                             mean  median  count
+category        bert_label                      
+Reddit Non-Tech negative    52.44     3.0    487
+                neutral     14.04     2.0    550
+                positive    46.58     1.0    209
+Reddit Tech     negative    29.02     3.0    923
+                neutral     91.58     2.0    985
+                positive    61.19     2.0    336
+YouTube Tech    negative     2.67     0.0    188
+                neutral      9.36     0.0    293
+                positive     8.04     0.0    207
