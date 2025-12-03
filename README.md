@@ -76,11 +76,11 @@ POSITIVE (high confidence):
 
 ### 3. Sentiment Distribution
 
-*IMAGE HERE*
+<img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/3.1.png" width="500">
 
 Across platforms, the dominant sentiment is neutral. This is expected in AI/tech discussions, which often involve factual updates, feature descriptions, and technical debates. Negative sentiment is moderately high (38%), consistent with skepticism, frustration, and concerns about AI’s risks. Positive sentiment is the smallest group (18%), reflecting fewer “enthusiastic” reactions.
 
-*IMAGE HERE*
+<img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/3.2.png" width="1000">
 
 Reddit Tech is the most negative. Tech enthusiasts are often critical of product performance, ethics, or technical limitations. Reddit Non-Tech is slightly less negative and slightly more positive. Discussions are emotional but more mixed. YouTube Tech is dramatically more positive (30%). This is nearly double the positivity of Reddit.
 
@@ -94,9 +94,9 @@ This indicates platform culture differences strongly impact sentiment.
 
 ### 4. Confidence Analysis
 
-*IMAGE HERE*
+<img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/4.1.png" width="500">
 
-*IMAGE HERE*
+<img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/4.2.png" width="1000">
 
 BERT is highly confident overall, with only ~6% uncertain classifications (<0.5). This indicates good signal in the text and consistent differentiation among sentiment classes. 
 The model has a good confident score for almost all data with the highest 0.76 for positive labels. It has low confidence for only a few 274 samples out of 4178 which mean the model handles classification of the data very well.
@@ -126,13 +126,13 @@ Chi-square results show that Reddit and YouTube communities form distinct emotio
 
 ### 6. Engagement Statistics
 
-*IMAGE HERE*
+<img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/6.1.png" width="750">
 
-*IMAGE HERE*
+<img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/6.2.png" width="1000">
 
-*IMAGE HERE x2*
+<img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/6.3.png" width="500"> <img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/6.4.png" width="500">
 
-*IMAGE HERE*
+<img src="https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/6.5.png" width="1000">
 
 Looking at Reddit non-tech engagement levels by sentiment, we can see that emotional posts—both positive and negative—tend to go viral, often receiving unusually high numbers of upvotes. In contrast, the pattern in Reddit tech communities is different: the most popular comments are neutral, suggesting that users engage more with factual information, technical news, or announcements. Positive comments also perform well, though not as strongly as neutral ones.
 
