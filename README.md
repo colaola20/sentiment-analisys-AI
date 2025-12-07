@@ -132,7 +132,18 @@ Chi-square results show that Reddit and YouTube communities form distinct emotio
 
 ## 📊 Engagement Statistics
 
-![Engagement Overview](https://raw.githubusercontent.com/colaola20/sentiment-analisys-AI/main/READMEimgs/6.1.png)  
+| Category | Sentiment | Count | Mean | Median | Std | Q25 | Q75 |
+|----------|-----------|-------|------|--------|-----|-----|-----|
+| **Reddit Non-Tech** | Negative | 487 | 52.44 | 3.0 | 269.47 | 1.0 | 12.0 |
+| | Neutral | 550 | 14.04 | 2.0 | 53.55 | 1.0 | 5.0 |
+| | Positive | 209 | 46.58 | 1.0 | 306.00 | 1.0 | 3.0 |
+| **Reddit Tech** | Negative | 923 | 29.02 | 3.0 | 108.43 | 1.0 | 13.0 |
+| | Neutral | 985 | 91.58 | 2.0 | 1010.23 | 1.0 | 7.0 |
+| | Positive | 336 | 61.19 | 2.0 | 485.76 | 1.0 | 8.25 |
+| **YouTube Tech** | Negative | 188 | 2.67 | 0.0 | 15.23 | 0.0 | 0.0 |
+| | Neutral | 293 | 9.36 | 0.0 | 86.49 | 0.0 | 1.0 |
+| | Positive | 207 | 8.04 | 0.0 | 47.68 | 0.0 | 1.0 |
+ 
 ![Engagement Screenshot 1](https://github.com/user-attachments/assets/d859c018-633b-49e6-83f7-7a1cb0c02a1f)  
 ![Engagement Screenshot 2](https://github.com/user-attachments/assets/51a043f6-ce6c-4b82-ad34-68ad20ae821d)  
 
